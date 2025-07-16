@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>晶体结构生成与可视化</title>
+    <!-- 引入3Dmol.js库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://3Dmol.org/build/3Dmol-min.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .control-panel {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .visualization-panel {
+            flex: 2;
+            min-width: 500px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        .status {
+            margin: 15px 0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .status.pending {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+        .status.running {
+            background-color: #cce5ff;
+            color: #004085;
+        }
+        .status.completed {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .status.failed {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .file-list {
+            margin-top: 20px;
+            max-height: 300px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+        }
+        .file-item {
+            padding: 8px;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .file-item:hover {
+            background-color: #f0f0f0;
+        }
+        .file-item.active {
+            background-color: #e3f2fd;
+        }
+        #viewer {
+            width: 100%;
+            height: 400px;
+            position: relative;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+            margin-left: 10px;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        .error-details {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 4px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>晶体结构生成与可视化</h1>
+    
+    <div class="container">
+        <div class="control-panel">
+            <h2>控制面板</h2>
+            <button id="generate-btn">生成晶体结构</button>
+            <div id="status-container" style="display: none;" class="status">
+                <div id="status-message">准备中...</div>
+                <div id="error-container" style="display: none;">
+                    <h3>错误详情：</h3>
+                    <div id="error-details" class="error-details"></div>
+                </div>
+            </div>
+            
+            <div id="file-container" style="display: none;">
+                <h3>生成的文件：</h3>
+                <div id="file-list" class="file-list"></div>
+            </div>
+        </div>
+        
+        <div class="visualization-panel">
+            <h2>结构可视化</h2>
+            <div id="viewer"></div>
+            <div id="viewer-controls" style="margin-top: 10px;">
+                <button id="ball-stick-btn">球棍模型</button>
+                <button id="space-fill-btn">空间填充模型</button>
+                <button id="wireframe-btn">线框模型</button>
+                <button id="download-btn" disabled>下载当前文件</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 全局变量
+        let currentTaskId = null;
+        let statusCheckInterval = null;
+        let currentFileUrl = null;
+        let viewer = null;
+        
+        // 初始化3Dmol查看器
+        $(document).ready(function() {
+            // 创建3Dmol查看器
+            viewer = $3Dmol.createViewer($("#viewer"), {
+                backgroundColor: "white"
+            });
+        });
+        
+        // 生成按钮点击事件
+        document.getElementById('generate-btn').addEventListener('click', function() {
+            // 禁用按钮，显示加载状态
+            this.disabled = true;
+            this.innerHTML = '正在生成 <span class="loading"></span>';
+            
+            // 重置状态显示
+            document.getElementById('status-container').style.display = 'block';
+            document.getElementById('status-container').className = 'status pending';
+            document.getElementById('status-message').textContent = '任务已提交，正在处理中...';
+            document.getElementById('error-container').style.display = 'none';
+            document.getElementById('file-container').style.display = 'none';
+            
+            // 发送请求到后端
+            fetch('/api/run', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                currentTaskId = data.task_id;
+                
+                // 开始定期检查任务状态
+                if (statusCheckInterval) {
+                    clearInterval(statusCheckInterval);
+                }
+                
+                statusCheckInterval = setInterval(checkTaskStatus, 2000);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('status-container').className = 'status failed';
+                document.getElementById('status-message').textContent = '提交任务失败: ' + error.message;
+                
+                // 重新启用按钮
+                document.getElementById('generate-btn').disabled = false;
+                document.getElementById('generate-btn').textContent = '生成晶体结构';
+            });
+        });
+        
+        // 检查任务状态
+        function checkTaskStatus() {
+            if (!currentTaskId) return;
+            
+            fetch(`/api/status/${currentTaskId}`)
+            .then(response => response.json())
+            .then(data => {
+                // 更新状态显示
+                document.getElementById('status-container').className = `status ${data.status}`;
+                document.getElementById('status-message').textContent = data.message;
+                
+                // 处理不同状态
+                if (data.status === 'completed') {
+                    // 任务完成，显示文件列表
+                    clearInterval(statusCheckInterval);
+                    displayFileList(data.files);
+                    
+                    // 重新启用按钮
+                    document.getElementById('generate-btn').disabled = false;
+                    document.getElementById('generate-btn').textContent = '生成晶体结构';
+                } 
+                else if (data.status === 'failed') {
+                    // 任务失败，显示错误信息
+                    clearInterval(statusCheckInterval);
+                    
+                    if (data.error) {
+                        document.getElementById('error-container').style.display = 'block';
+                        document.getElementById('error-details').textContent = data.error;
+                    }
+                    
+                    // 重新启用按钮
+                    document.getElementById('generate-btn').disabled = false;
+                    document.getElementById('generate-btn').textContent = '生成晶体结构';
+                }
+            })
+            .catch(error => {
+                console.error('Error checking status:', error);
+            });
+        }
+        
+        // 显示文件列表
+        function displayFileList(files) {
+            const fileContainer = document.getElementById('file-container');
+            const fileList = document.getElementById('file-list');
+            
+            // 清空文件列表
+            fileList.innerHTML = '';
+            
+            if (files && files.length > 0) {
+                // 显示文件容器
+                fileContainer.style.display = 'block';
+                
+                // 添加文件项
+                files.forEach(file => {
+                    const fileItem = document.createElement('div');
+                    fileItem.className = 'file-item';
+                    fileItem.textContent = file.name;
+                    fileItem.dataset.path = file.path;
+                    
+                    fileItem.addEventListener('click', function() {
+                        // 移除其他文件的活动状态
+                        document.querySelectorAll('.file-item').forEach(item => {
+                            item.classList.remove('active');
+                        });
+                        
+                        // 添加当前文件的活动状态
+                        this.classList.add('active');
+                        
+                        // 加载CIF文件到查看器
+                        loadCifFile(this.dataset.path);
+                    });
+                    
+                    fileList.appendChild(fileItem);
+                });
+                
+                // 自动加载第一个文件
+                if (files.length > 0) {
+                    fileList.firstChild.click();
+                }
+            }
+        }
+        
+        // 加载CIF文件到查看器
+        function loadCifFile(filePath) {
+            currentFileUrl = filePath;
+            
+            // 清除查看器
+            viewer.clear();
+            
+            // 加载CIF文件
+            fetch(filePath)
+            .then(response => response.text())
+            .then(data => {
+                // 加载CIF数据到查看器
+                viewer.addModel(data, "cif");
+                
+                // 设置默认样式
+                viewer.setStyle({}, {stick:{radius: 0.15}, sphere:{scale: 0.3}});
+                
+                // 缩放以适应所有原子
+                viewer.zoomTo();
+                
+                // 渲染查看器
+                viewer.render();
+                
+                // 启用下载按钮
+                document.getElementById('download-btn').disabled = false;
+            })
+            .catch(error => {
+                console.error('Error loading CIF file:', error);
+            });
+        }
+        
+        // 球棍模型按钮
+        document.getElementById('ball-stick-btn').addEventListener('click', function() {
+            viewer.setStyle({}, {stick:{radius: 0.15}, sphere:{scale: 0.3}});
+            viewer.render();
+        });
+        
+        // 空间填充模型按钮
+        document.getElementById('space-fill-btn').addEventListener('click', function() {
+            viewer.setStyle({}, {sphere:{scale: 0.8}});
+            viewer.render();
+        });
+        
+        // 线框模型按钮
+        document.getElementById('wireframe-btn').addEventListener('click', function() {
+            viewer.setStyle({}, {line:{}});
+            viewer.render();
+        });
+        
+        // 下载按钮
+        document.getElementById('download-btn').addEventListener('click', function() {
+            if (currentFileUrl) {
+                window.open(currentFileUrl, '_blank');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+# generated using pymatgen
+data_NaLi3FeBiP8O5
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.99588999
+_cell_length_b   6.33286748
+_cell_length_c   5.21159954
+_cell_angle_alpha   85.19360262
+_cell_angle_beta   105.65248458
+_cell_angle_gamma   74.85247491
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   NaLi3FeBiP8O5
+_chemical_formula_sum   'Na1 Li3 Fe1 Bi1 P8 O5'
+_cell_volume   241.88087575
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.95177758  0.89054942  0.22262022  1
+  Li  Li1  1  0.51285434  0.41219610  0.46508196  1
+  Fe  Fe2  1  0.52698642  0.45179421  0.70752692  1
+  Li  Li3  1  0.79671639  0.14495815  0.05218626  1
+  O  O4  1  0.03525732  0.95883656  0.02659920  1
+  P  P5  1  0.94382805  0.56042337  0.56734878  1
+  P  P6  1  0.85404372  0.71776390  0.96694934  1
+  P  P7  1  0.61062181  0.94545335  0.07474832  1
+  Bi  Bi8  1  0.04217909  0.09856029  0.20426603  1
+  P  P9  1  0.01765564  0.55574584  0.47850934  1
+  P  P10  1  0.97414243  0.59386861  0.02268897  1
+  P  P11  1  0.37067780  0.97729546  0.96141392  1
+  P  P12  1  0.40558758  0.07726932  0.55640876  1
+  O  O13  1  0.49114862  0.97049838  0.49169287  1
+  Na  Na14  1  0.95807385  0.59055108  0.28275973  1
+  O  O15  1  0.05217195  0.07405999  0.61618346  1
+  P  P16  1  0.35559174  0.97371244  0.05216872  1
+  O  O17  1  0.03071287  0.97102439  0.35110688  1
+  O  O18  1  0.04910017  0.59295571  0.32839414  1

@@ -1,0 +1,44 @@
+# generated using pymatgen
+data_Li2ZnFeNiP6O7
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.85919689
+_cell_length_b   5.14989507
+_cell_length_c   5.62507755
+_cell_angle_alpha   102.02714928
+_cell_angle_beta   70.14825739
+_cell_angle_gamma   75.52461290
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Li2ZnFeNiP6O7
+_chemical_formula_sum   'Li2 Zn1 Fe1 Ni1 P6 O7'
+_cell_volume   146.34468753
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.94394541  0.87189102  0.33674985  1
+  Li  Li1  1  0.38367566  0.47651836  0.46344766  1
+  P  P2  1  0.62149739  0.51711756  0.71209091  1
+  Ni  Ni3  1  0.73663551  0.14337739  0.06247815  1
+  P  P4  1  0.93554777  0.48332918  0.58106744  1
+  P  P5  1  0.84023374  0.64965099  0.96395153  1
+  Fe  Fe6  1  0.50705075  0.93970287  0.07145035  1
+  P  P7  1  0.04471507  0.10662122  0.26529190  1
+  O  O8  1  0.02190400  0.62721401  0.52657598  1
+  P  P9  1  0.96831483  0.47273713  0.03085522  1
+  O  O10  1  0.27628881  0.96705472  0.95736843  1
+  O  O11  1  0.35926741  0.08162761  0.43292049  1
+  P  P12  1  0.47958574  0.96023524  0.59917647  1
+  O  O13  1  0.95131069  0.61937112  0.40099850  1
+  O  O14  1  0.06757794  0.07924346  0.69658834  1
+  Zn  Zn15  1  0.34362799  0.96559459  0.06170239  1
+  O  O16  1  0.03580615  0.96410096  0.40954691  1
+  O  O17  1  0.05678795  0.60070306  0.25478175  1

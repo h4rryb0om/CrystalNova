@@ -1,0 +1,45 @@
+# generated using pymatgen
+data_Li2HoFeCoNiP6WO6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   7.10699463
+_cell_length_b   8.30246891
+_cell_length_c   7.62536967
+_cell_angle_alpha   68.16722016
+_cell_angle_beta   76.71582242
+_cell_angle_gamma   88.48728391
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Li2HoFeCoNiP6WO6
+_chemical_formula_sum   'Li2 Ho1 Fe1 Co1 Ni1 P6 W1 O6'
+_cell_volume   405.62161788
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.95303565  0.91037810  0.25437233  1
+  Ho  Ho1  1  0.40483242  0.45108357  0.38884687  1
+  Li  Li2  1  0.60675192  0.42122352  0.72554529  1
+  Ni  Ni3  1  0.81299448  0.13254490  0.04357847  1
+  P  P4  1  0.03295057  0.96334261  0.02341050  1
+  Fe  Fe5  1  0.94725800  0.57823217  0.62619400  1
+  O  O6  1  0.86210251  0.74133271  0.96772379  1
+  W  W7  1  0.61378467  0.95465875  0.05775240  1
+  P  P8  1  0.03855542  0.09597823  0.17403199  1
+  O  O9  1  0.01685137  0.54183137  0.53899002  1
+  Co  Co10  1  0.97496700  0.50006562  0.01910188  1
+  P  P11  1  0.29489687  0.97812742  0.96268129  1
+  O  O12  1  0.33842710  0.07304759  0.50819641  1
+  P  P13  1  0.53998214  0.97128940  0.58744431  1
+  O  O14  1  0.96117043  0.53699040  0.35060766  1
+  O  O15  1  0.05092329  0.07312912  0.70279884  1
+  P  P16  1  0.36150116  0.97552347  0.04551047  1
+  P  P17  1  0.02859303  0.97234523  0.34640172  1
+  O  O18  1  0.04481766  0.54447198  0.25703907  1

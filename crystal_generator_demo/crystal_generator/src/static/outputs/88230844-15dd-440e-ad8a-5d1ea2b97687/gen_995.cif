@@ -1,0 +1,44 @@
+# generated using pymatgen
+data_Li4MnFeP5O7
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.28765865
+_cell_length_b   2.35021980
+_cell_length_c   3.37095940
+_cell_angle_alpha   64.08684114
+_cell_angle_beta   66.83757858
+_cell_angle_gamma   66.30285599
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Li4MnFeP5O7
+_chemical_formula_sum   'Li4 Mn1 Fe1 P5 O7'
+_cell_volume   39.56841548
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.94159412  0.90073949  0.30217987  1
+  Li  Li1  1  0.43148404  0.41433984  0.38459867  1
+  Li  Li2  1  0.61717576  0.41363049  0.70551354  1
+  Li  Li3  1  0.80048150  0.14562821  0.06261518  1
+  P  P4  1  0.93514788  0.56878412  0.63443065  1
+  Fe  Fe5  1  0.83776700  0.73434651  0.96265745  1
+  O  O6  1  0.60742444  0.93951941  0.07003154  1
+  O  O7  1  0.04716641  0.10899962  0.18888180  1
+  O  O8  1  0.02362691  0.51178348  0.54542047  1
+  O  O9  1  0.96702492  0.48008603  0.03159986  1
+  O  O10  1  0.29277149  0.96412456  0.95598763  1
+  Mn  Mn11  1  0.36637726  0.08222993  0.54046798  1
+  P  P12  1  0.52498591  0.95711040  0.56858563  1
+  P  P13  1  0.95021611  0.51725763  0.36158013  1
+  O  O14  1  0.05978763  0.08154301  0.70569855  1
+  O  O15  1  0.39723152  0.96346301  0.05762191  1
+  P  P16  1  0.03808955  0.95787168  0.36949965  1
+  P  P17  1  0.05716350  0.52454734  0.26136130  1

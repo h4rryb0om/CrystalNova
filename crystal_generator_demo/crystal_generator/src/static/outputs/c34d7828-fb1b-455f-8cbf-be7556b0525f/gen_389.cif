@@ -1,0 +1,45 @@
+# generated using pymatgen
+data_BaNaLi3VBi(PO)6
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.71755985
+_cell_length_b   5.44013433
+_cell_length_c   3.19125694
+_cell_angle_alpha   65.16119292
+_cell_angle_beta   65.47158085
+_cell_angle_gamma   31.53517740
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   BaNaLi3VBi(PO)6
+_chemical_formula_sum   'Ba1 Na1 Li3 V1 Bi1 P6 O6'
+_cell_volume   46.77117168
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.92754394  0.84517092  0.35924986  1
+  Li  Li1  1  0.37862983  0.39491445  0.32093617  1
+  Bi  Bi2  1  0.58269602  0.31689620  0.89994991  1
+  Li  Li3  1  0.87939805  0.11870852  0.06779458  1
+  O  O4  1  0.10000950  0.94931191  0.04659001  1
+  Ba  Ba5  1  0.87376088  0.45741618  0.79704529  1
+  O  O6  1  0.90057671  0.73528308  0.91812807  1
+  P  P7  1  0.62619793  0.95052314  0.13929196  1
+  V  V8  1  0.09563614  0.08765882  0.12010154  1
+  P  P9  1  0.07617515  0.54814875  0.72525966  1
+  Na  Na10  1  0.92829227  0.47270083  0.10207263  1
+  O  O11  1  0.41640458  0.95209289  0.90772313  1
+  O  O12  1  0.47498894  0.12747931  0.61065757  1
+  O  O13  1  0.48058119  0.90614086  0.52932918  1
+  P  P14  1  0.92419958  0.31904548  0.57221544  1
+  P  P15  1  0.14334868  0.09067996  0.64808220  1
+  P  P16  1  0.38753352  0.96164644  0.15669383  1
+  O  O17  1  0.10614274  0.95235723  0.33640292  1
+  P  P18  1  0.11037485  0.32411593  0.44960785  1

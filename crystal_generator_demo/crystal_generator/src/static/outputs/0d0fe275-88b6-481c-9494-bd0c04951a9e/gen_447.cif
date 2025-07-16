@@ -1,0 +1,42 @@
+# generated using pymatgen
+data_Li2ZrFe(PO3)3
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.66298116
+_cell_length_b   4.96775205
+_cell_length_c   4.33205084
+_cell_angle_alpha   72.33978943
+_cell_angle_beta   62.16874208
+_cell_angle_gamma   74.65743979
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Li2ZrFe(PO3)3
+_chemical_formula_sum   'Li2 Zr1 Fe1 P3 O9'
+_cell_volume   83.65487353
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.93110102  0.86190510  0.25863072  1
+  Li  Li1  1  0.46191540  0.40687057  0.46957195  1
+  Zr  Zr2  1  0.56207848  0.46611223  0.68629044  1
+  Fe  Fe3  1  0.76491618  0.17055006  0.07647581  1
+  O  O4  1  0.59881097  0.92321694  0.09785611  1
+  P  P5  1  0.06094299  0.11943549  0.23276119  1
+  O  O6  1  0.02930002  0.55814451  0.48538297  1
+  O  O7  1  0.95999724  0.56936091  0.04098552  1
+  O  O8  1  0.36044770  0.95536649  0.95015693  1
+  O  O9  1  0.41030303  0.09172332  0.51886296  1
+  O  O10  1  0.48641884  0.94242734  0.55383164  1
+  O  O11  1  0.94116783  0.58683401  0.33175048  1
+  P  P12  1  0.07295267  0.08996144  0.62403047  1
+  O  O13  1  0.35463759  0.95251352  0.07372545  1
+  O  O14  1  0.04753288  0.94609654  0.36473486  1
+  P  P15  1  0.06637841  0.58289993  0.31115872  1

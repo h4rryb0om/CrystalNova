@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_Li4CoMoP5BrO8
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.57293195
+_cell_length_b   4.01658891
+_cell_length_c   2.68807274
+_cell_angle_alpha   81.24730735
+_cell_angle_beta   119.77112228
+_cell_angle_gamma   97.63278660
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Li4CoMoP5BrO8
+_chemical_formula_sum   'Li4 Co1 Mo1 P5 Br1 O8'
+_cell_volume   42.26333619
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.93665934  0.85792780  0.32209098  1
+  Li  Li1  1  0.37652203  0.36997768  0.30207253  1
+  Li  Li2  1  0.59649491  0.30561358  0.90990472  1
+  Li  Li3  1  0.89437425  0.10572924  0.05556083  1
+  P  P4  1  0.05106125  0.36802468  0.06443868  1
+  Mo  Mo5  1  0.08686584  0.95937151  0.03822007  1
+  O  O6  1  0.88758010  0.49658713  0.80623555  1
+  O  O7  1  0.91097707  0.74310142  0.92718190  1
+  O  O8  1  0.63601828  0.96274024  0.12480891  1
+  P  P9  1  0.08776841  0.07956453  0.10037590  1
+  O  O10  1  0.06557017  0.53317070  0.73029912  1
+  P  P11  1  0.93728918  0.48803210  0.08922948  1
+  Co  Co12  1  0.39505097  0.95870215  0.91792518  1
+  O  O13  1  0.46462056  0.11707817  0.60601467  1
+  P  P14  1  0.48720437  0.91647953  0.55469239  1
+  O  O15  1  0.93562526  0.30146414  0.56232119  1
+  O  O16  1  0.13270038  0.08169150  0.66416574  1
+  O  O17  1  0.36841366  0.97125554  0.14320156  1
+  P  P18  1  0.09479599  0.95709920  0.30328217  1
+  Br  Br19  1  0.09436842  0.31702441  0.43834853  1

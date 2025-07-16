@@ -1,0 +1,45 @@
+# generated using pymatgen
+data_Li3CrSnSbMoP3WO8
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   2.88045808
+_cell_length_b   5.57706858
+_cell_length_c   6.80113773
+_cell_angle_alpha   86.43496658
+_cell_angle_beta   90.62554935
+_cell_angle_gamma   116.56106531
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Li3CrSnSbMoP3WO8
+_chemical_formula_sum   'Li3 Cr1 Sn1 Sb1 Mo1 P3 W1 O8'
+_cell_volume   97.51923071
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.95702928  0.90020239  0.26613933  1
+  Li  Li1  1  0.41802108  0.44304103  0.44061667  1
+  Mo  Mo2  1  0.60720468  0.47635210  0.72523046  1
+  Li  Li3  1  0.79106390  0.13169786  0.04216360  1
+  Sn  Sn4  1  0.03228848  0.96810335  0.02072723  1
+  O  O5  1  0.95036453  0.50433975  0.59338707  1
+  P  P6  1  0.86744344  0.67485237  0.96915311  1
+  O  O7  1  0.57273746  0.95702934  0.05639108  1
+  O  O8  1  0.03555627  0.09233412  0.20551848  1
+  W  W9  1  0.01509470  0.59940529  0.52358603  1
+  Cr  Cr10  1  0.97740138  0.50208318  0.01719130  1
+  Sb  Sb11  1  0.30988470  0.98120785  0.96446574  1
+  O  O12  1  0.36668098  0.07231177  0.48118252  1
+  O  O13  1  0.49888530  0.97656369  0.58683896  1
+  P  P14  1  0.96249360  0.58341974  0.36382818  1
+  O  O15  1  0.04951373  0.07065359  0.68417835  1
+  P  P16  1  0.32787904  0.97927523  0.04431491  1
+  O  O17  1  0.02730264  0.97688043  0.36428005  1
+  O  O18  1  0.04333739  0.59036994  0.25957850  1

@@ -1,0 +1,5 @@
+flask==2.3.3
+pymatgen==2023.9.10
+torch==2.0.1
+numpy==1.24.3
+torch-geometric==2.3.1

@@ -1,0 +1,48 @@
+# generated using pymatgen
+data_Li4Mn2FeNiSnP5O8
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.64378770
+_cell_length_b   8.14684567
+_cell_length_c   6.61425605
+_cell_angle_alpha   104.45932137
+_cell_angle_beta   89.19176307
+_cell_angle_gamma   116.05393730
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Li4Mn2FeNiSnP5O8
+_chemical_formula_sum   'Li4 Mn2 Fe1 Ni1 Sn1 P5 O8'
+_cell_volume   262.95809756
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.96475542  0.89778298  0.27411908  1
+  Li  Li1  1  0.39299652  0.41639438  0.48002347  1
+  Sn  Sn2  1  0.64994222  0.49784189  0.73424900  1
+  Li  Li3  1  0.79919869  0.11866084  0.03440095  1
+  Fe  Fe4  1  0.97248524  0.95978343  0.60816258  1
+  Li  Li5  1  0.56463468  0.99686569  0.96450734  1
+  O  O6  1  0.01193916  0.44131163  0.00861162  1
+  Ni  Ni7  1  0.02509997  0.97796983  0.01323456  1
+  P  P8  1  0.95823920  0.50678319  0.60392332  1
+  Mn  Mn9  1  0.88811266  0.63865662  0.97247803  1
+  Mn  Mn10  1  0.56765521  0.97053045  0.04724913  1
+  P  P11  1  0.02739636  0.08230028  0.20045996  1
+  P  P12  1  0.01122950  0.61945850  0.51552099  1
+  O  O13  1  0.98263526  0.49265403  0.01056033  1
+  P  P14  1  0.34535578  0.99262971  0.96808511  1
+  O  O15  1  0.38785970  0.06519195  0.47263777  1
+  O  O16  1  0.49087906  0.98402554  0.60904533  1
+  O  O17  1  0.96990478  0.62486321  0.33003297  1
+  P  P18  1  0.04010296  0.06410308  0.65408021  1
+  O  O19  1  0.30142570  0.98919493  0.03454389  1
+  O  O20  1  0.02210984  0.98950541  0.39265189  1
+  O  O21  1  0.03482256  0.60930991  0.25435102  1

@@ -1,0 +1,49 @@
+# generated using pymatgen
+data_Li5CrFeNi2SnP6O7
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.73533406
+_cell_length_b   4.57816198
+_cell_length_c   4.25408018
+_cell_angle_alpha   72.37891530
+_cell_angle_beta   107.34838977
+_cell_angle_gamma   91.09163749
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Li5CrFeNi2SnP6O7
+_chemical_formula_sum   'Li5 Cr1 Fe1 Ni2 Sn1 P6 O7'
+_cell_volume   83.64151924
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.94307518  0.87060899  0.34972903  1
+  Li  Li1  1  0.36925721  0.37586161  0.28996044  1
+  Li  Li2  1  0.58878565  0.30063030  0.91398793  1
+  Sn  Sn3  1  0.90132236  0.09901869  0.05127382  1
+  Li  Li4  1  0.93795848  0.95096678  0.63911515  1
+  Li  Li5  1  0.72797137  0.97775388  0.92045861  1
+  P  P6  1  0.94801480  0.96949828  0.04393394  1
+  P  P7  1  0.04696221  0.34296581  0.05741969  1
+  P  P8  1  0.08112851  0.96500337  0.03271304  1
+  O  O9  1  0.89671504  0.49030468  0.82560271  1
+  Cr  Cr10  1  0.91953826  0.74044549  0.93268061  1
+  P  P11  1  0.64348990  0.96872240  0.11282901  1
+  O  O12  1  0.07574425  0.07526273  0.09195577  1
+  Ni  Ni13  1  0.06068440  0.52425349  0.75117093  1
+  O  O14  1  0.94380081  0.45605865  0.08195427  1
+  P  P15  1  0.39521632  0.96602494  0.92196357  1
+  O  O16  1  0.46062183  0.10865775  0.61569744  1
+  O  O17  1  0.50035781  0.92735642  0.54498202  1
+  Ni  Ni18  1  0.94032151  0.29121149  0.56969178  1
+  O  O19  1  0.11989713  0.07712224  0.65378171  1
+  Fe  Fe20  1  0.38618129  0.97586209  0.12918755  1
+  O  O21  1  0.08559731  0.96631587  0.31945080  1
+  P  P22  1  0.08768325  0.29992321  0.43323803  1

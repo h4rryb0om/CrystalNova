@@ -1,0 +1,44 @@
+# generated using pymatgen
+data_Li3TiVCrCoSbP2O7Ne
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   2.81460321
+_cell_length_b   4.76310735
+_cell_length_c   2.54502893
+_cell_angle_alpha   76.60185674
+_cell_angle_beta   104.37805397
+_cell_angle_gamma   46.98472993
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Li3TiVCrCoSbP2O7Ne
+_chemical_formula_sum   'Li3 Ti1 V1 Cr1 Co1 Sb1 P2 O7 Ne1'
+_cell_volume   19.91677979
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.92065310  0.84465432  0.36145812  1
+  Li  Li1  1  0.40005058  0.39730316  0.30923942  1
+  Ti  Ti2  1  0.55562288  0.31260884  0.89384925  1
+  Li  Li3  1  0.87163681  0.12393826  0.07591476  1
+  Cr  Cr4  1  0.86640853  0.49101904  0.78914607  1
+  O  O5  1  0.89460349  0.74010599  0.91044968  1
+  O  O6  1  0.63796490  0.94579774  0.14723162  1
+  P  P7  1  0.10350841  0.09471759  0.12388176  1
+  Co  Co8  1  0.08458035  0.52600724  0.72322029  1
+  V  V9  1  0.92078394  0.48026881  0.10900429  1
+  P  P10  1  0.38573045  0.94211465  0.90114141  1
+  O  O11  1  0.47887173  0.13636757  0.60212195  1
+  O  O12  1  0.50124019  0.89960575  0.51812434  1
+  Ne  Ne13  1  0.91985184  0.31505746  0.55640364  1
+  Sb  Sb14  1  0.15085147  0.09805091  0.64621669  1
+  O  O15  1  0.40393880  0.95658112  0.15683359  1
+  O  O16  1  0.11324838  0.93936956  0.32953379  1
+  O  O17  1  0.11576401  0.32036754  0.45829144  1

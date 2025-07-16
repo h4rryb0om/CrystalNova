@@ -1,0 +1,48 @@
+# generated using pymatgen
+data_Li4Mn2VCrFeP4O9
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   8.37272703
+_cell_length_b   5.93298359
+_cell_length_c   6.99737117
+_cell_angle_alpha   75.96085559
+_cell_angle_beta   100.35267796
+_cell_angle_gamma   118.20859238
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Li4Mn2VCrFeP4O9
+_chemical_formula_sum   'Li4 Mn2 V1 Cr1 Fe1 P4 O9'
+_cell_volume   296.30231925
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.96488577  0.90402138  0.17982453  1
+  Li  Li1  1  0.50838250  0.41271961  0.46650052  1
+  Mn  Mn2  1  0.50429130  0.45195466  0.72973186  1
+  Li  Li3  1  0.81547648  0.12505740  0.03091338  1
+  Fe  Fe4  1  0.97276151  0.95273447  0.68114609  1
+  Li  Li5  1  0.60914522  0.99774760  0.96457541  1
+  V  V6  1  0.01184349  0.52347630  0.00674367  1
+  O  O7  1  0.02272446  0.97697389  0.01266854  1
+  O  O8  1  0.95996934  0.57847577  0.58035451  1
+  Cr  Cr9  1  0.88441145  0.72736681  0.97263604  1
+  Mn  Mn10  1  0.64899063  0.96551442  0.05460789  1
+  O  O11  1  0.03014515  0.08278009  0.16483620  1
+  O  O12  1  0.01075470  0.56192881  0.47407696  1
+  O  O13  1  0.98344010  0.60451019  0.00966907  1
+  P  P14  1  0.41773108  0.99317980  0.96827596  1
+  O  O15  1  0.40757027  0.06659243  0.56288433  1
+  O  O16  1  0.49657193  0.98569453  0.51791328  1
+  P  P17  1  0.97020882  0.59687203  0.25163388  1
+  O  O18  1  0.03669567  0.06434266  0.58580101  1
+  P  P19  1  0.33067870  0.98962748  0.03375037  1
+  P  P20  1  0.02192390  0.98762947  0.31842557  1
+  O  O21  1  0.03395290  0.60252857  0.29519618  1

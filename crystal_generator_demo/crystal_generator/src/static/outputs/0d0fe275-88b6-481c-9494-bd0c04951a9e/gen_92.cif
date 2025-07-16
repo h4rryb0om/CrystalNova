@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_Li3Mn2CrPWO12
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   4.77911942
+_cell_length_b   5.39430551
+_cell_length_c   9.98255206
+_cell_angle_alpha   81.88698219
+_cell_angle_beta   78.46260866
+_cell_angle_gamma   79.67306344
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Li3Mn2CrPWO12
+_chemical_formula_sum   'Li3 Mn2 Cr1 P1 W1 O12'
+_cell_volume   246.58213848
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.96632117  0.95155996  0.22854614  1
+  Li  Li1  1  0.53559369  0.39937156  0.31627330  1
+  Cr  Cr2  1  0.52506131  0.31572878  0.73988587  1
+  Li  Li3  1  0.87960970  0.11268588  0.02914997  1
+  O  O4  1  0.01199103  0.38429752  0.00618858  1
+  O  O5  1  0.02117101  0.98140216  0.01349915  1
+  O  O6  1  0.96132618  0.65283692  0.69731867  1
+  Mn  Mn7  1  0.88717639  0.84223521  0.97228283  1
+  O  O8  1  0.73416430  0.96736592  0.04075319  1
+  Mn  Mn9  1  0.02712669  0.08332305  0.10206833  1
+  O  O10  1  0.01116626  0.40758005  0.56286973  1
+  W  W11  1  0.98278624  0.52966881  0.00747902  1
+  O  O12  1  0.33709762  0.99282259  0.96861529  1
+  O  O13  1  0.31689158  0.06496359  0.65643001  1
+  O  O14  1  0.61930913  0.98833877  0.47350100  1
+  O  O15  1  0.97022235  0.45642123  0.25064075  1
+  O  O16  1  0.03153595  0.06500177  0.67486995  1
+  O  O17  1  0.41021851  0.98978698  0.02445807  1
+  O  O18  1  0.01952947  0.98709571  0.33259362  1
+  P  P19  1  0.03334615  0.45512521  0.31720141  1

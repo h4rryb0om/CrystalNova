@@ -1,0 +1,46 @@
+# generated using pymatgen
+data_Li2ZnFe3CoP4O9
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   5.72306714
+_cell_length_b   7.60405065
+_cell_length_c   5.25095941
+_cell_angle_alpha   109.17445467
+_cell_angle_beta   78.35712436
+_cell_angle_gamma   93.03325792
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Li2ZnFe3CoP4O9
+_chemical_formula_sum   'Li2 Zn1 Fe3 Co1 P4 O9'
+_cell_volume   211.37353518
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Li  Li0  1  0.95702064  0.89200550  0.31377348  1
+  Li  Li1  1  0.40021804  0.43617764  0.45847210  1
+  Fe  Fe2  1  0.65222543  0.50958681  0.72811460  1
+  Co  Co3  1  0.77302039  0.12557527  0.04237469  1
+  Fe  Fe4  1  0.01553953  0.40757698  0.01512909  1
+  O  O5  1  0.03121447  0.96945614  0.02029334  1
+  P  P6  1  0.95184255  0.48740166  0.58994544  1
+  O  O7  1  0.87222749  0.64136654  0.96996242  1
+  Zn  Zn8  1  0.52625233  0.96032971  0.05422636  1
+  P  P9  1  0.03375326  0.09068615  0.22863083  1
+  Fe  Fe10  1  0.01493591  0.62182063  0.53438073  1
+  P  P11  1  0.97835749  0.47044462  0.01736104  1
+  P  P12  1  0.28551972  0.98348796  0.96466994  1
+  O  O13  1  0.37571096  0.07101989  0.45537874  1
+  O  O14  1  0.48919404  0.97745216  0.60862643  1
+  O  O15  1  0.96327698  0.60498494  0.37262923  1
+  O  O16  1  0.04925733  0.06957347  0.69743705  1
+  O  O17  1  0.33362338  0.98105121  0.04498816  1
+  O  O18  1  0.02659968  0.98097467  0.39957979  1
+  O  O19  1  0.04125656  0.61448288  0.24256904  1
