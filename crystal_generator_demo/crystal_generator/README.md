@@ -20,6 +20,9 @@ crystal_generator/
 │       └── index.html    # 主页面模板
 ```
 
+## 使用时请获得我们的训练模型，并且将代码中的模型调用路径进行修改：在generate1.py中的703行修改为您的模型存放路径即可
+
+
 ## 依赖项
 
 项目依赖项已在`requirements.txt`文件中列出，主要包括：
